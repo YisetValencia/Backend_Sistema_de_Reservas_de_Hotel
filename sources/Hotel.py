@@ -19,13 +19,13 @@ class Hotel:
         """
         self.habitaciones = []
         for i in range(101, 200):
-            self.habitaciones.append(HabitacionEstandar(i))
+            self.habitaciones.append(HabitacionEstandar(str(i), i, "estandar"))
 
         for i in range(201, 300):
-            self.habitaciones.append(HabitacionPremium(i))
+            self.habitaciones.append(HabitacionPremium(str(i), i, "premium"))
 
         for i in range(301, 400):
-            self.habitaciones.append(HabitacionPresidencial(i))
+            self.habitaciones.append(HabitacionPresidencial(str(i), i, "presidencial"))
         self.reservas = []
 
     def reservar(
