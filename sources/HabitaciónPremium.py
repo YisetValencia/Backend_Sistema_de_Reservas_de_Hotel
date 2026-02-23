@@ -15,9 +15,8 @@ class HabitacionPremium(Habitacion):
         super().__init__(id, numero_habitacion, tipo_habitacion, precio)
         self.servicio_yacuzzi = servicio_yacuzzi
 
-    def calcular_precio_total_yacuzzi(self):
+    def calcular_precio_total_yacuzzi(self) -> float:
         """Calcula el precio total de la habitación premium, incluyendo el servicio de jacuzzi si está habilitado."""
-        precio_total = self.precio
 
         if self.servicio_yacuzzi:
             return 50000
