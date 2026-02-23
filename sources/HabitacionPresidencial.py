@@ -18,11 +18,12 @@ class HabitacionPresidencial(Habitacion):
         super().__init__(id, numero_habitacion, tipo_habitacion, precio)
         self.servicio_cine_integrado = servicio_cine_integrado
 
-    def calcular_precio_servicio_adicional(self) -> float:
+    def calcular_costo(self, dias: int) -> float:
         """
         Calcula el costo del servicio adicional (cine integrado)
-        y retorna el valor sin modificar el precio base.
+        y retorna el valor total.
         """
         if self.servicio_cine_integrado:
-            return 300000
-        return 0
+            return (self.precio * dias) + 100000
+
+        return self.precio * dias
