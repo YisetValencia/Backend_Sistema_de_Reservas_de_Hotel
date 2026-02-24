@@ -12,7 +12,7 @@ class HabitacionPresidencial(Habitacion):
         id,
         numero_habitacion,
         tipo_habitacion,
-        precio,
+        precio=450000,
         servicio_cine_integrado: bool = False,
     ):
         super().__init__(id, numero_habitacion, tipo_habitacion, precio)
