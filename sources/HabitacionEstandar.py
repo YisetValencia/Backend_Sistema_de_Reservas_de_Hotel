@@ -14,7 +14,7 @@ class Habitacion_Estandar(Habitacion):
         id,
         numero_habitacion,
         tipo_habitacion,
-        precio,
+        precio=200000,
         servicio_television: bool = False,
     ):
         """
