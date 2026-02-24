@@ -22,8 +22,11 @@ class HabitacionPresidencial(Habitacion):
         """
         Calcula el costo del servicio adicional (cine integrado)
         y retorna el valor total.
+
         """
+        valor_servicio_cine = 300000
+
         if self.servicio_cine_integrado:
-            return (self.precio * dias) + 100000
+            return (self.precio * dias) + valor_servicio_cine
 
         return self.precio * dias
