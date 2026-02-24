@@ -4,22 +4,23 @@ from sources.Habitacion import Habitacion
 
 
 class HabitacionPremium(Habitacion):
-    def __init__(
+    def _init_(
         self,
         id,
         numero_habitacion,
         tipo_habitacion,
-        precio,
+        precio=300000,
         servicio_yacuzzi: bool = False,
     ):
-        super().__init__(id, numero_habitacion, tipo_habitacion, precio)
+        super()._init_(id, numero_habitacion, tipo_habitacion, precio)
         self.servicio_yacuzzi = servicio_yacuzzi
 
-    def calcular_precio_total_yacuzzi(self) -> float:
-        """Calcula el precio total de la habitación premium, incluyendo el servicio de jacuzzi si está habilitado."""
+    def calcular_costo(self, noches) -> float:
 
+        valor_jacuzzi = 50000
+        """Calcula el precio total de la habitación premium, incluyendo el servicio de jacuzzi si está habilitado."""
         if self.servicio_yacuzzi:
-            return 50000
-        return 0
+            return self.precio * noches + valor_jacuzzi
+        return self.precio
 
     """ La clase HabitacionPremium hereda de la clase Habitacion y agrega un atributo adicional para indicar si el servicio de jacuzzi está habilitado. Además, incluye un método para calcular el precio total de la habitación premium, sumando el costo del servicio de jacuzzi si está habilitado. """
