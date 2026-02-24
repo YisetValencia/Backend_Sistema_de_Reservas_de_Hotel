@@ -21,6 +21,6 @@ class HabitacionPremium(Habitacion):
         """Calcula el precio total de la habitación premium, incluyendo el servicio de jacuzzi si está habilitado."""
         if self.servicio_yacuzzi:
             return self.precio * noches + valor_jacuzzi
-        return self.precio
+        return self.precio * noches
 
     """ La clase HabitacionPremium hereda de la clase Habitacion y agrega un atributo adicional para indicar si el servicio de jacuzzi está habilitado. Además, incluye un método para calcular el precio total de la habitación premium, sumando el costo del servicio de jacuzzi si está habilitado. """
