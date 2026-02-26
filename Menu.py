@@ -1,4 +1,4 @@
-from sources.hotel import Hotel
+from sources.Hotel import Hotel
 from sources.HabitacionPresidencial import HabitacionPresidencial
 from sources.HabitacionPremium import HabitacionPremium
 from sources.HabitacionEstandar import HabitacionEstandar
@@ -8,20 +8,19 @@ habitacionPresi = HabitacionPresidencial
 habitacionPre = HabitacionPremium
 
 
-def validar_id(cadena: str) -> bool:
+def validar_id(cadena):
     """
-    Valida de forma recursiva que el documento ingresado sea numérico.
-
-    Args:
-        cadena (str): La entrada inicial del usuario a validar.
-
     Returns:
-        bool: True si la cadena final es numérica.
+        str: El ID validado si es numérico.
     """
     cadena = cadena.strip()
+
+    # Si está vacío o no es número, vuelve a pedirlo
     if len(cadena) == 0 or not cadena.isdigit():
         return validar_id(input("Ingrese un ID válido: "))
-    return cadena.isdigit()
+
+    # En lugar de return cadena.isdigit(), devuelve la cadena misma
+    return cadena
 
 
 def validar_opcion(cadena: str) -> bool:
