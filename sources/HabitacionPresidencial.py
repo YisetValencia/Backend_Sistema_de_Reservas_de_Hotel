@@ -4,7 +4,7 @@ from sources.Habitacion import Habitacion
 class HabitacionPresidencial(Habitacion):
     """
     Representa una habitación presidencial con servicio opcional
-    de cine integrado.
+    de cine integrado
     """
 
     def __init__(
