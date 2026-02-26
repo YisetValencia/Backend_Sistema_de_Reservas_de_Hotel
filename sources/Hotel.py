@@ -1,7 +1,8 @@
 from sources.HabitacionEstandar import HabitacionEstandar
 from sources.HabitacionPremium import HabitacionPremium
-from sources.HabitacionSuite import HabitacionPresidencial
+from sources.HabitacionPresidencial import HabitacionPresidencial
 from sources.Reserva import Reserva
+from sources.Habitacion import Habitacion
 
 
 class Hotel:
