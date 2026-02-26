@@ -4,7 +4,7 @@ from sources.Habitacion import Habitacion
 
 
 class HabitacionPremium(Habitacion):
-    def _init_(
+    def __init__(
         self,
         id,
         numero_habitacion,
@@ -12,7 +12,7 @@ class HabitacionPremium(Habitacion):
         precio=300000,
         servicio_yacuzzi: bool = False,
     ):
-        super()._init_(id, numero_habitacion, tipo_habitacion, precio)
+        super().__init__(id, numero_habitacion, tipo_habitacion, precio)
         self.servicio_yacuzzi = servicio_yacuzzi
 
     """ El método _init_ de la clase HabitacionPremium llama al método _init_ de la clase base Habitacion para inicializar los atributos heredados, y luego inicializa el atributo servicio_yacuzzi para indicar si el servicio de jacuzzi está habilitado. """
