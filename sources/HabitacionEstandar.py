@@ -14,7 +14,7 @@ class Habitacion_Estandar(Habitacion):
         id,
         numero_habitacion,
         tipo_habitacion,
-        precio=200000,
+        precio,
         servicio_television: bool = False,
     ):
         """
@@ -29,10 +29,10 @@ class Habitacion_Estandar(Habitacion):
         super().__init__(id, numero_habitacion, tipo_habitacion, precio)
         self.servicio_television = servicio_television
 
-    def calcular_costos(self, noches: int) -> float:
+    def calcular_precio_total_television(self):
         """Calcula el precio total de la habitación estándar, incluyendo el servicio de televisión si está habilitado."""
+        precio_total = self.precio
 
-        valor_servicio_television = 20000
         if self.servicio_television:
-            return (self.precio * noches) + valor_servicio_television
-        return self.precio * noches
+            return 20000
+        return 0
