@@ -34,7 +34,7 @@ Este proyecto busca reforzar los conceptos de **clases, herencia, encapsulamient
 4. **Pega la URL del repositorio**:
    
    ```
-   https://github.com/YisetValencia/Backend-Sistema-de-Reservas-de-Hotel.
+   https://github.com/YisetValencia/Backend_Sistema_de_Reservas_de_Hotel
    ```
 6. Selecciona la carpeta donde quieres guardar el proyecto.  
 7. Cuando termine la clonación, elige **Abrir repositorio clonado**.
