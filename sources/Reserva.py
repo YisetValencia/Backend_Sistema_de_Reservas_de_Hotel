@@ -2,7 +2,7 @@ from sources.Habitacion import Habitacion
 
 
 class Reserva:
-    """Representa una reserva de una habitación para un cliente."""
+    """Representa una reserva de una habitación para un cliente"""
 
     def __init__(
         self,
