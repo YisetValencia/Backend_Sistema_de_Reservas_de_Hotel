@@ -30,6 +30,6 @@ class Reserva:
         """Devuelve una representación en texto de la reserva."""
         return (
             f"Reserva de {self.cliente} con documento {self.documento} en {self.habitacion}"
-            f" por {self.noches}"
-            f"Costo total: ${self.get_costo_total()}"
+            f" por  {self.noches} noches"
+            f" Costo total: ${self.get_costo_total()}"
         )
