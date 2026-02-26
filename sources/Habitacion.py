@@ -7,7 +7,7 @@ class Habitacion:
     """
 
     def __init__(
-        self, id: str, numero_habitacion: int, tipo_habitacion: str, precio: float
+        self, id: str, numero_habitacion: int, tipo_habitacion: str, precio: int
     ):
         """
         Inicializa una nueva habitación con sus datos principales.
